@@ -47,7 +47,6 @@ public class Sort {
 				}
 				}
 				return true;
-				 // https://www.geeksforgeeks.org/bogosort-permutation-sort/#
 			}
 
 	/*
@@ -68,7 +67,6 @@ public class Sort {
 			int temp = array[min_value];
 			array[min_value] = array[min];
 			array[min] = temp; 
-			// https://www.youtube.com/watch?v=qI3I7skEVdU
 		}
 	long endTime = System.nanoTime();
     double elapsedTime = (endTime - startTime) / 1_000_000.0;
@@ -93,7 +91,6 @@ public class Sort {
 			min--; 
 		}
 			array[min + 1] = target;  
-			// https://www.youtube.com/watch?v=nKzEJWbkPbQ&t=6s
 		}
 		long endTime = System.nanoTime();
 	    double elapsedTime = (endTime - startTime) / 1_000_000.0;
@@ -120,7 +117,6 @@ public class Sort {
 		if (isSorted) {
 			return;
 		}
-		//https://www.youtube.com/watch?v=uJLwnsLn0_Q&list=RDCMUCWv7vMbMWH4-V0ZXdmDpPBA&index=3
 		}
 		long endTime = System.nanoTime();
 	    double elapsedTime = (endTime - startTime) / 1_000_000.0;
@@ -147,7 +143,6 @@ public class Sort {
 		LetUsSwap(array, pivotIndex, max);
 		
 		int leftPointer = Partition(array, min, max, pivot);
-		// https://www.youtube.com/watch?v=h8eyY7dIiN4. 
 		
 		QuickSort(array, min, leftPointer - 1);
 		QuickSort(array, leftPointer + 1 , max);
@@ -191,7 +186,6 @@ public class Sort {
 	                array[j] = temp;
 	            }
 	        }
-	       // https://www.geeksforgeeks.org/shellsort/
 	        
 	        long endTime = System.nanoTime();
 		    double elapsedTime = (endTime - startTime) / 1_000_000.0;
@@ -225,7 +219,6 @@ public class Sort {
 		MergeSort(rightHalf);
 		
 		Merge(array, leftHalf, rightHalf);
-		// https://www.youtube.com/watch?v=bOk35XmHPKs
 	}
 	
 	/*
@@ -251,8 +244,7 @@ public class Sort {
 	    double elapsedTime = (endTime - startTime) / 1_000_000.0;
 	    System.out.printf("Gnome Sort took"
 	   + " %.6f milliseconds to sort the "
-	   + "array of size %d\n", elapsedTime, array.length);
-	    // https://www.geeksforgeeks.org/gnome-sort-a-stupid-one/. 
+	   + "array of size %d\n", elapsedTime, array.length);. 
 	}
 	
 	/* Cocktail Sort is a variation of bubble sort that works by repeatedly sorting
@@ -310,7 +302,6 @@ public class Sort {
             // smallest number to its rightful spot.
             start = start + 1;
         }
-         // https://www.geeksforgeeks.org/cocktail-sort/#
         
         long endTime = System.nanoTime();
 	    double elapsedTime = (endTime - startTime) / 1_000_000.0;
@@ -356,7 +347,6 @@ public class Sort {
 		    System.out.printf("Radix Sort took"
 		   + " %.6f milliseconds to sort the "
 		   + "array of size %d\n", elapsedTime, array.length);
-		    // https://www.geeksforgeeks.org/radix-sort/
 		}
 
 	
@@ -365,13 +355,11 @@ public class Sort {
 		int temp = array[index_1];
 		array[index_1] = array[index_2];
 		array[index_2] = temp; 
-		// https://www.youtube.com/watch?v=h8eyY7dIiN4.
 	}
 	private int Partition(int[] array, int min, int max, int pivot) {
 		
 		int rightPointer = max; 
 		int leftPointer = min; 
-		// https://www.youtube.com/watch?v=h8eyY7dIiN4.
 		
 		while (leftPointer < rightPointer) {
 			
@@ -400,7 +388,6 @@ public class Sort {
 			}else {
 				array[k] = rightHalf[j];
 				j++;  
-		// https://www.youtube.com/watch?v=bOk35XmHPKs
 			}
 			k++;
 		}// if there are still remaining values when merging
