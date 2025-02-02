@@ -11,7 +11,6 @@
 #include <stdio.h>  // include the standard input/output library
 #include <stdlib.h> // include the standard library
 #include <string.h> // include the string library
-#include "memwatch.h" 
 
 // define the push command
 #define PUSH		's'  
